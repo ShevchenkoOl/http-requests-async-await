@@ -146,19 +146,19 @@ const obj = {
 
 //----------------------- DELETE - DELETE
 
-const deleteAPI = (id) => {
-        const options = {
-                method: 'DELETE',
-              };
+// const deleteAPI = (id) => {
+//         const options = {
+//                 method: 'DELETE',
+//               };
 
-        return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, options) // data.id - це id того елемента в масиві який ми будемо оновлювати 
-        .then(res => {
-            if(!res.ok) {
-                throw new Error(res.statusText);
-            }
-            return res.json();
-        })
-        .catch(err => console.log(err));
-    };
+//         return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, options) // data.id - це id того елемента в масиві який ми будемо оновлювати 
+//         .then(res => {
+//             if(!res.ok) {
+//                 throw new Error(res.statusText);
+//             }
+//             return res.json();
+//         })
+//         .catch(err => console.log(err));
+//     };
     
-    deleteAPI(1) // в результаті запиту delete, нам повертається пусти об'єкт, тому .then(data => console.log(data)); перевіку ми робимо безпосереднжо в функції
+//     deleteAPI(1) // в результаті запиту delete, нам повертається пусти об'єкт, тому .then(data => console.log(data)); перевіку ми робимо безпосереднжо в функції

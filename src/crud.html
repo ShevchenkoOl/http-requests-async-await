@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP requests, async/await</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body>
+    <a href="./index.html">Go Back</a>
+    <!-- для прикладу створюємо реальні пост method: POST -->
+    <form action="submit" class="form">
+      <h1>Method POST</h1>
+      <input type="text" name="title" />
+      <textarea name="body" cols="30" rows="10"></textarea>
+      <button>Create post</button>
+    </form>
+    <h3 class="error"></h3>
+    <!-- Після створення нашої публікації ми додаємо її до списку існуючих публікацій -->
+    <ul class="list-posts">
+      <li data-postID="1">
+        <!--data-postID нам потрібно для прісвоення id-->
+        <h3>First post</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam labore
+          error inventore sed asperiores amet nobis vitae debitis
+        </p>
+      </li>
+      <li data-postID="2">
+        <h3>Second post</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam labore
+          error inventore sed asperiores amet nobis vitae debitis
+        </p>
+      </li>
+      <li data-postID="3">
+        <h3>Third post</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam labore
+          error inventore sed asperiores amet nobis vitae debitis
+        </p>
+      </li>
+    </ul>
+
+    <script type="module" src="./crud.js"></script>
+  </body>
+</html>

@@ -85,23 +85,23 @@ const createAPI = (data) => {
 };
 //createAPI().then(data => console.log(data));
 
-// // 4. функція для створення постів
-// const createPost = ({id, title, body}) => { // функція приймає якісь объект (obj), в даному випадку ми отримаємо obj = {id, title, body};
-// list.insertAdjacentHTML('beforeend', `
-//     <li data-postID="${id}">
-//         <h3>${title}</h3>
-//         <p>${body}</p>
-//     </li>
-// `);
-// };
+// 4. функція для створення постів
+const createPost = ({id, title, body}) => { // функція приймає якісь объект (obj), в даному випадку ми отримаємо obj = {id, title, body};
+list.insertAdjacentHTML('beforeend', `
+    <li data-postID="${id}">
+        <h3>${title}</h3>
+        <p>${body}</p>
+    </li>
+`);
+};
 
 
 
 //-----------------------UPDATE - PUT/PATCH
-const obj = {
-    id: "1",
-    title: "Hello world!"
-};
+// const obj = {
+//     id: "1",
+//     title: "Hello world!"
+// };
 
 // const updateAPI = (data) => {
 //     const options = {

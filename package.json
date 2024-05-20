@@ -18,7 +18,7 @@
     "url": "https://github.com/ShevchenkoOl/http-requests-async-await.git/issues"
   },
   "dependencies": {
-    "axios": "^1.6.8",
+    "axios": "^1.7.0",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.7",
     "slim-select": "^2.8.2"

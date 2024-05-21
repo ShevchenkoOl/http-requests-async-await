@@ -1,5 +1,13 @@
 # HTTP requests, async/await
-djjjj
+This project was built using the parcel project builder and displays the query methods:
+Method Description:
+ - POST Operation create - create a new resource;
+ - GET Read operation - retrieve a set of resources or one resource behind an identifier;
+ - PUT and PATCH Operation update - update the resource behind the identifier;
+ - DELETE Delete operation - delete a resource behind an identifier.
+
+In addition, asynchronous functions are used using the async/await syntax.
+
 ## How to Use the Repository
 
 1. Clone the repository: `git clone https://github.com/ShevchenkoOl/http-requests-async-await.git`
